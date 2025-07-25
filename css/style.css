@@ -401,6 +401,11 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -760,7 +765,7 @@ a {
 }
 .footer__policy {
   row-gap: 8px;
-  margin: 0 0 24px 0;
+  margin: 0 0 32px 0;
 }
 @media (min-width: 768px) {
   .footer__policy {
@@ -939,11 +944,26 @@ a {
   background-color: #F4F6FA;
   box-shadow: none;
 }
+@media (min-width: 460px) {
+  .about-card--large {
+    padding: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .about-card--large {
+    padding: 28px;
+  }
+}
 .about-card--large .about-card__title {
   margin: 0;
   max-width: 150px;
   font-size: 18px;
   line-height: 22px;
+}
+@media (min-width: 768px) {
+  .about-card--large .about-card__title {
+    max-width: 200px;
+  }
 }
 .about-card__icon {
   flex-shrink: 0;
@@ -955,17 +975,41 @@ a {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
 }
 .about-card__image-small {
   position: absolute;
   right: 0;
   bottom: 20px;
 }
+@media (min-width: 460px) {
+  .about-card__image-small {
+    right: 10px;
+    bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .about-card__image-small {
+    right: 20px;
+    bottom: 80px;
+  }
+}
 .about-card__image-large {
   position: absolute;
   right: 40px;
   bottom: 0;
+}
+@media (min-width: 460px) {
+  .about-card__image-large {
+    right: 70px;
+    bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .about-card__image-large {
+    right: 110px;
+    bottom: 20px;
+  }
 }
 
 .rating-card {
@@ -1037,11 +1081,22 @@ a {
   border-radius: 16px;
   background: linear-gradient(130.89deg, #4465DE 0%, #273D86 35.67%, #2A365C 58.5%, #1F222E 100%);
 }
+@media (min-width: 768px) {
+  .achievement-card {
+    flex-direction: column;
+    padding: 28px 28px 38px 28px;
+  }
+}
 .achievement-card__icon {
   flex-shrink: 0;
   width: 32px;
   height: 32px;
   color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .achievement-card__icon {
+    margin: 0 0 28px 0;
+  }
 }
 .achievement-card__title {
   margin: 0 0 8px 0;
@@ -1066,17 +1121,33 @@ a {
   background: #F4F6FA;
   border-radius: 16px;
 }
+@media (min-width: 768px) {
+  .news-card {
+    padding: 24px 28px;
+  }
+}
 .news-card__date {
   margin: 0 0 12px 0;
   font-size: 14px;
   line-height: 18px;
   color: #6A6E80;
 }
+@media (min-width: 768px) {
+  .news-card__date {
+    margin: 0 0 20px 0;
+  }
+}
 .news-card__text {
   font-weight: 400;
   margin: 0 0 20px 0;
   font-size: 14px;
   line-height: 18px;
+}
+@media (min-width: 768px) {
+  .news-card__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .news-card__link {
   margin: auto 0 0 0;
@@ -1095,13 +1166,26 @@ a {
   overflow: hidden;
   padding: 40px 0 60px 0;
 }
+@media (min-width: 768px) {
+  .about {
+    padding: 40px 0 80px 0;
+  }
+}
 .about__title {
   position: relative;
   margin: 0 0 40px 0;
-  padding: 0 0 28px 0;
+  padding: 0 0 26px 0;
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
+}
+@media (min-width: 768px) {
+  .about__title {
+    margin: 0 0 60px 0;
+    padding: 0 0 30px 0;
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 .about__title::after {
   position: absolute;
@@ -1129,13 +1213,24 @@ a {
 }
 
 .rating {
-  margin: 0 0 60px 0;
+  margin: 0 0 61px 0;
+}
+@media (min-width: 768px) {
+  .rating {
+    margin: 0 0 80px 0;
+  }
 }
 .rating__title {
   margin: 0 0 28px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
+  letter-spacing: -0.04rem;
+}
+@media (min-width: 768px) {
+  .rating__title {
+    margin: 0 0 32px 0;
+  }
 }
 .rating__list {
   list-style: none;
@@ -1143,10 +1238,27 @@ a {
   margin: 0;
   display: grid;
   gap: 16px;
+  grid-auto-flow: dense;
+}
+@media (min-width: 768px) {
+  .rating__list {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+  }
+}
+@media (min-width: 768px) {
+  .rating__item:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2;
+  }
 }
 
 .achievements {
   margin: 0 0 60px 0;
+}
+@media (min-width: 768px) {
+  .achievements {
+    margin: 0 0 80px 0;
+  }
 }
 .achievements__title {
   margin: 0 0 28px 0;
@@ -1163,15 +1275,32 @@ a {
   flex-wrap: wrap;
   gap: 16px;
 }
+@media (min-width: 768px) {
+  .achievements__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .news {
   margin: 0 0 60px 0;
+}
+@media (min-width: 768px) {
+  .news {
+    margin: 0 0 80px 0;
+  }
 }
 .news__title {
   margin: 0 0 28px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
+  letter-spacing: -0.04rem;
+}
+@media (min-width: 768px) {
+  .news__title {
+    margin: 0 0 32px 0;
+  }
 }
 .news__list {
   list-style: none;
@@ -1179,6 +1308,11 @@ a {
   margin: 0 0 28px 0;
   display: grid;
   gap: 16px;
+}
+@media (min-width: 768px) {
+  .news__list {
+    margin: 0 0 32px 0;
+  }
 }
 .news__button {
   width: 100%;

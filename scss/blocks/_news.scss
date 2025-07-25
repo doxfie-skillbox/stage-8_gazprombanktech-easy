@@ -1,11 +1,20 @@
 .news {
   margin: 0 0 60px 0;
 
+  @include vp-768 {
+    margin: 0 0 80px 0;
+  }
+
   &__title {
     margin: 0 0 28px 0;
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
+    letter-spacing: -0.04rem;
+
+    @include vp-768 {
+      margin: 0 0 32px 0;
+    }
   }
 
   &__list {
@@ -14,6 +23,10 @@
     margin: 0 0 28px 0;
     display: grid;
     gap: 16px;
+
+    @include vp-768 {
+      margin: 0 0 32px 0;
+    }
   }
 
   &__button {
