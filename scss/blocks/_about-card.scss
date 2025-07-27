@@ -8,6 +8,16 @@
   background-color: $color-white;
   box-shadow: 0 6px 20px 0 $color-gulf-blue-2;
 
+  @include vp-1024 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    height: 100%;
+    padding: 32px;
+    background-color: $color-solitude-2;
+    box-shadow: unset;
+  }
+
   &--large {
     padding: 20px;
     min-height: 200px;
@@ -24,6 +34,12 @@
       padding: 28px;
     }
 
+    @include vp-1024 {
+      padding: 32px;
+      min-height: 352px;
+      justify-content: space-between;
+    }
+
     .about-card__title {
       margin: 0;
       max-width: 150px;
@@ -32,6 +48,19 @@
 
       @include vp-768 {
         max-width: 200px;
+      }
+
+      @media (min-width: 890px) {
+        max-width: 300px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+
+      @include vp-1024 {
+        max-width: 430px;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 600;
       }
     }
   }
@@ -43,11 +72,46 @@
     color: $color-black-russian;
   }
 
+  &__icon-arrow-right {
+    display: none;
+    width: 48px;
+    height: 48px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: $color-solitude-4;
+
+    @include vp-1024 {
+      display: flex;
+    }
+  }
+
   &__title {
     margin: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+
+    @media (min-width: 890px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @include vp-1024 {
+      font-size: 22px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &__description {
+    display: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+
+    @include vp-1024 {
+      display: flex;
+    }
   }
 
   &__image-small {
@@ -64,6 +128,12 @@
       right: 20px;
       bottom: 80px;
     }
+
+    @include vp-1024 {
+      width: 120px;
+      height: 120px;
+      bottom: 132px;
+    }
   }
 
   &__image-large {
@@ -79,6 +149,13 @@
     @include vp-768 {
       right: 110px;
       bottom: 20px;
+    }
+
+    @include vp-1024 {
+      width: 240px;
+      height: 240px;
+      right: 150px;
+      bottom: 32px;
     }
   }
 }

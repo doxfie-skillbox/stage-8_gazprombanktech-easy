@@ -76,18 +76,35 @@
           <li class="about__main-item">
             <a class="about-card about-card--large" href="#">
               <h2 class="about-card__title">Раскрытие информации</h2>
-              <img class="about-card__image-large" src="images/folder-mobile.png" srcset="images/folder-mobile@2x.png 2x" width="140" height="140" alt="Папка">
-              <img class="about-card__image-small" src="images/mark-mobile.png" srcset="images/mark-mobile@2x.png 2x" width="80" height="80" alt="Метка">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/folder-desktop-small.png 1x, images/folder-desktop-small@2x.png 2x">
+                <img class="about-card__image-large" src="images/folder-mobile.png" srcset="images/folder-mobile@2x.png 2x" width="140" height="140" alt="Папка">
+              </picture>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/mark-desktop-small.png 1x, images/mark-desktop-small@2x.png 2x">
+                <img class="about-card__image-small" src="images/mark-mobile.png" srcset="images/mark-mobile@2x.png 2x" width="80" height="80" alt="Метка">
+              </picture>
+              <svg class="about-card__icon-arrow-right" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+              </svg>
             </a>
           </li>
           <li class="about__main-item">
             <a class="about-card about-card--large" href="#">
               <h2 class="about-card__title">Реквизиты, лицензии и&nbsp;контакты</h2>
-              <img class="about-card__image-large" src="images/docs-mobile.png" srcset="images/docs-mobile@2x.png 2x" width="140" height="140" alt="Документы">
-              <img class="about-card__image-small" src="images/folder-small-mobile.png" srcset="images/folder-small-mobile@2x.png 2x" width="80" height="80" alt="Папка">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/docs-desktop-small.png 1x, images/docs-desktop-small@2x.png 2x">
+                <img class="about-card__image-large" src="images/docs-mobile.png" srcset="images/docs-mobile@2x.png 2x" width="140" height="140" alt="Документы">
+              </picture>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/folder-small-desktop-small.png 1x, images/folder-small-desktop-small@2x.png 2x">
+                <img class="about-card__image-small" src="images/folder-small-mobile.png" srcset="images/folder-small-mobile@2x.png 2x" width="80" height="80" alt="Папка">
+              </picture>
+              <svg class="about-card__icon-arrow-right" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow-right"></use>
+              </svg>
             </a>
           </li>
-
         </ul>
         <ul class="about__list">
           <li class="about__item">
@@ -96,6 +113,7 @@
                 <use xlink:href="images/sprite.svg#icon-bank"></use>
               </svg>
               <h2 class="about-card__title">О банке</h2>
+              <p class="about-card__description">Основные сведения о&nbsp;банке</p>
             </a>
           </li>
           <li class="about__item">
@@ -104,6 +122,7 @@
                 <use xlink:href="images/sprite.svg#icon-control"></use>
               </svg>
               <h2 class="about-card__title">Комплаенс-контроль</h2>
+              <p class="about-card__description">Система комплаенс-контроля затрагивает все уровни банка</p>
             </a>
           </li>
           <li class="about__item">
@@ -112,6 +131,7 @@
                 <use xlink:href="images/sprite.svg#icon-hand"></use>
               </svg>
               <h2 class="about-card__title">Противодействие коррупции</h2>
+              <p class="about-card__description">Обращение руководства, основные принципы, документы, горячая линия</p>
             </a>
           </li>
           <li class="about__item">
@@ -120,6 +140,7 @@
                 <use xlink:href="images/sprite.svg#icon-flower"></use>
               </svg>
               <h2 class="about-card__title">Устойчивое развитие</h2>
+              <p class="about-card__description">Соответствие принципам экологической, социальной и&nbsp;управленческой ответственности</p>
             </a>
           </li>
           <li class="about__item">
@@ -128,6 +149,7 @@
                 <use xlink:href="images/sprite.svg#icon-globe"></use>
               </svg>
               <h2 class="about-card__title">Зарубежные представительства</h2>
+              <p class="about-card__description">Основная информация о&nbsp;международной деятельности банка</p>
             </a>
           </li>
           <li class="about__item">

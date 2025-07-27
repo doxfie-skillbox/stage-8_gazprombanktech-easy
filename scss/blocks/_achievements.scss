@@ -5,6 +5,10 @@
     margin: 0 0 80px 0;
   }
 
+  @include vp-1024 {
+    margin: 0 0 100px 0;
+  }
+
   &__title {
     margin: 0 0 28px 0;
     font-weight: 600;
@@ -24,6 +28,10 @@
     @include vp-768 {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+
+    @include vp-1024 {
+      gap: 20px;
     }
   }
 }
