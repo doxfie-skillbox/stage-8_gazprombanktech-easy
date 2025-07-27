@@ -52,6 +52,12 @@
     font-size: 14px;
     line-height: 18px;
     color: $color-black-russian;
+
+    &:hover, 
+    &:focus-visible {
+      color: $color-royal-blue-1;
+      outline: none;
+    }
   }
 
   &__icon {

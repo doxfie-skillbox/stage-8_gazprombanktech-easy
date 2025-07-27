@@ -9,6 +9,10 @@
     margin: 0 0 100px 0;
   }
 
+  @include vp-1304 {
+    margin: 0 0 120px 0;
+  }
+
   &__title {
     margin: 0 0 28px 0;
     font-weight: 600;
@@ -25,6 +29,10 @@
       font-size: 40px;
       line-height: 44px;
       margin: 0 0 48px 0;
+    }
+
+    @include vp-1304 {
+      margin: 0 0 60px 0;
     }
   }
 
@@ -44,6 +52,11 @@
     @include vp-1024 {
       gap: 20px;
     }
+
+    @include vp-1304 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
   }
 
   // &__item {
@@ -57,6 +70,10 @@
   &__item:nth-last-child(1):nth-child(odd) {
     @include vp-768 {
       grid-column: span 2;
+    }
+
+    @include vp-1304 {
+      grid-column: unset;
     }
   }
 }

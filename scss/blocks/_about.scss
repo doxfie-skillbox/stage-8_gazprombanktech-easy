@@ -10,6 +10,10 @@
     padding: 40px 0 100px 0;
   }
 
+  @include vp-1304 {
+    padding: 40px 0 120px 0;
+  }
+
   &__title {
     position: relative;
     margin: 0 0 40px 0;
@@ -30,7 +34,7 @@
         font-size: 40px;
         line-height: 44px;
       }
-  }
+    }
 
     &::after {
       position: absolute;
@@ -55,6 +59,15 @@
       gap: 20px;
       margin: 0 0 20px 0;
     }
+
+    @include vp-1304 {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @include vp-1304 {
+      margin: 0 0 24px 0;
+    }
   }
 
   &__list {
@@ -68,11 +81,20 @@
       grid-template-columns: 1fr 1fr;
       gap: 20px;
     }
+
+    @include vp-1304 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
   }
 
   &__item {
     @include vp-1024 {
       min-height: 240px;
+    }
+
+    @include vp-1304 {
+      min-height: 300px;
     }
   }
 }

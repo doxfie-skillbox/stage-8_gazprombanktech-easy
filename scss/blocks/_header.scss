@@ -134,6 +134,11 @@
   .header__login {
     display: none;
 
+    &:hover,
+    &:focus-visible {
+      background-color: $color-link-water;
+    }
+
     @include vp-1024 {
       display: flex;
       margin: 0 16px 0 0;

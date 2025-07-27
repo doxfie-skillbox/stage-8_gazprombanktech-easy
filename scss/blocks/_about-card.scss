@@ -8,6 +8,12 @@
   background-color: $color-white;
   box-shadow: 0 6px 20px 0 $color-gulf-blue-2;
 
+  &:hover,
+  &:focus-visible {
+    background-color: $color-solitude-1;
+    outline: none;
+  }
+
   @include vp-1024 {
     flex-direction: column;
     align-items: flex-start;
@@ -25,6 +31,12 @@
     align-items: flex-start;
     background-color: $color-solitude-2;
     box-shadow: none;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-5;
+      outline: none;
+    }
 
     @media (min-width: 460px) {
       padding: 24px;
@@ -80,6 +92,10 @@
     border-radius: 8px;
     background-color: $color-solitude-4;
 
+    &:hover {
+      background-color: $color-link-water;
+    }
+
     @include vp-1024 {
       display: flex;
     }
@@ -118,6 +134,7 @@
     position: absolute;
     right: 0;
     bottom: 20px;
+    pointer-events: none;
 
     @media (min-width: 460px) {
       right: 10px;
@@ -134,12 +151,18 @@
       height: 120px;
       bottom: 132px;
     }
+
+    @include vp-1304 {
+      right: 20px;
+      bottom: 40px;
+    }
   }
 
   &__image-large {
     position: absolute;
     right: 40px;
     bottom: 0;
+    pointer-events: none;
 
     @media (min-width: 460px) {
       right: 70px;
@@ -156,6 +179,11 @@
       height: 240px;
       right: 150px;
       bottom: 32px;
+    }
+
+    @include vp-1304 {
+      right: 60px;
+      bottom: 20px;
     }
   }
 }
