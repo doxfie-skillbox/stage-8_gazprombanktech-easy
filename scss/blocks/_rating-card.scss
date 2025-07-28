@@ -58,6 +58,11 @@
     background-color: transparent;
     cursor: pointer;
 
+    &:hover {
+      color: $color-royal-blue-2;
+      border-bottom: 1px solid $color-royal-blue-2;
+    }
+
     @include vp-1024 {
       margin: 0;
       font-size: 56px;
@@ -90,6 +95,10 @@
     display: flex;
     align-items: center;
     color: $color-royal-blue-1;
+
+    &:hover {
+      color: $color-royal-blue-2;
+    }
   }
 
   &__arrow {

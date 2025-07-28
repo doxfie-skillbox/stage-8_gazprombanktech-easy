@@ -1217,6 +1217,10 @@ a {
   background-color: transparent;
   cursor: pointer;
 }
+.rating-card__value:hover {
+  color: #2F54DF;
+  border-bottom: 1px solid #2F54DF;
+}
 @media (min-width: 1024px) {
   .rating-card__value {
     margin: 0;
@@ -1248,6 +1252,9 @@ a {
   display: flex;
   align-items: center;
   color: #476BF0;
+}
+.rating-card__link:hover {
+  color: #2F54DF;
 }
 .rating-card__arrow {
   width: 16px;
